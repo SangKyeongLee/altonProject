@@ -1,0 +1,1186 @@
+@import url(reset.css);
+@font-face{	font-family: 'NanumBarunGothic';src:url(../altonfont/NanumBarunGothic.ttf) format('truetype');}
+@font-face{	font-family: 'NanumBarunGothicBold';src:url(../altonfont/NanumBarunGothicBold.ttf) format('truetype');}
+@font-face{	font-family: 'HelveticaBold';src:url(../altonfont/HelveticaBd.ttf) format('truetype');}
+body{
+	font-family: NanumBarunGothic;
+	font-size:1em;
+	color:#666;
+	background: #fbfbfb;
+}
+/*header,section,div,footer{
+	border:solid 1px #ccc;
+}*/
+header:after{
+	content:'';
+	display: block;
+	clear:both;
+}
+.container{
+	width:1200px;
+	margin:0 auto;
+	/*border:solid 1px #ff0;*/
+}
+.subTitle{
+	margin: 40px 0;
+	text-align: center;
+}
+.subTitle h2{
+	font-family: HelveticaBold;
+	font-size: 34px;
+	color:#202025;
+}
+.subTitle p{
+	font-size: 16px;
+}
+.subTitle .Nsubp{
+	margin-left:64px;
+}
+.subTitle .more{
+	float:right;
+}
+/*subNavi 스타일*/
+.subNavi .container{
+	height:30px;
+}
+.subNavi ul{
+	text-align: right;
+	margin:0;
+	padding:0;
+}
+.subNavi{
+	width:100%;
+	background: #333;
+}
+.subNavi li{
+	display: inline-block;
+	font-size:12px;
+	list-style: none;
+}
+.aaa a{
+	color:#FFF;
+}
+.subNavi .subcen{
+	padding:0 0 0 20px;
+}
+.subNavi .subtxt{
+	padding:0 20px;
+	border-right:solid 1px #FFF;
+}
+/*//subNavi스타일*/
+
+/*네비게이션 스타일*/
+.navi{
+	width:100%;
+	height: 100%;
+	background: #202025;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+}
+.main{
+	height:80px;
+}
+.logo{
+	margin-top: 20px;
+	display: inline-block;
+	width:11%;
+}
+.logo img{
+	width:100%;
+}
+.navi:after{
+	content: "";
+    display: block;
+    clear: both;
+	
+}
+.main .mainMenu{
+	margin-top: 26.5px;
+	float:right;
+	display: inline-block;
+}
+.main .mainMenu:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.navi .mainMenu li{
+	position:relative;
+	font-size: 18px;
+	margin: 0 0 0 130px;
+	float:left;
+}
+.mainMenu a{
+	color:#FFF;
+	text-decoration:none;
+	display: block;
+}
+a:hover{
+	color:#ff8300;
+}
+
+.Mainsub.sub_1{
+	margin-left:-1330px;
+}
+.Mainsub.sub_2{
+	margin-left:-1510px;
+}
+.Mainsub.sub_3{
+	margin-left:-1580px;
+}
+.Mainsub.sub_4{
+	margin-left:-1500px;
+}
+.Mainsub.sub_5{
+	margin-left:-1560px;
+}
+.Mainsub{
+	z-index: 9999;
+	padding-left:1300px;
+	position:absolute;
+	top:50px;
+	background:#202025;
+	width:1200px;
+	height: 0;
+	overflow: hidden; /* 실 내용이 높이보다 커지면 해당 내용 감춤 */
+	transition: height .3s; /* height를 변화 시켰을 때 0.2초간 변화 되도록 설정(기본) */ 
+	-webkit-transition: height 0.3s; /* height를 변화 시켰을 때 0.2초간 변화 되도록 설정(구버전 크롬/사파라ㅣ) */ 
+	-moz-transition: height .3s; /* height를 변화 시켰을 때 0.2초간 변화 되도록 설정(구버전 파폭) */ 
+	-o-transition: height .3s; /* height를 변화 시켰을 때 0.2초간 변화 되도록 설정(구버전 오페라) */
+}
+.mainMenu>li:hover .Mainsub{
+	height:50px;
+	
+}
+.navi .mainMenu .Mainsub li{
+	padding:0 30px;
+	margin:0;
+}
+.innerMenu{
+	font-size:16px;
+	color:#e2e2e2;
+}
+/*//네비게이션 스타일*/
+/*메인비주얼 스타일*/
+.visual{
+	text-align: center;
+ 	/*padding: 310px 0;*/
+ 	
+ 	box-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+}
+.view01{
+	width:100%;
+	margin:0 auto;
+}
+/*.visual{*/
+/*	background: url(../images/visual_img01.jpg) no-repeat 50% 100%;*/
+/*}*/
+.visualPosition{
+	position: relative;
+}
+.visualPosition>.right_arrow{
+	position:absolute;
+	top:50%;
+	right:-20%;
+}
+.visualPosition>.left_arrow{
+	position: absolute;
+	top:50%;
+	left:-20%;
+}
+.dot{
+	position: absolute;
+	bottom:-280px;
+	left:45%;
+}
+.dot a{
+	margin:0 2px;
+}
+/*//메인비주얼 스타일*/
+/*알톤 브랜드*/
+.AltonBrand{
+	background:#fbfbfb;
+	height: 700px;
+	border-bottom:solid 1px #ddd;
+}
+.BrandPosition{
+	position:relative;	
+}
+.BrandPosition>.right_arrow{
+	position: absolute;
+	top:350px;
+	right:-60px;
+}
+.BrandPosition>.left_arrow{
+	position:absolute;
+	top:350px;
+	left:-60px;
+}
+/*.Brand_Bx{*/
+/*	width:1200px;*/
+/*	height:505px;*/
+/*	overflow-y: hidden;*/
+/*}*/
+.BRbox{
+	/*float: left;*/
+	/*width:285px;*/
+	/*height:500px;*/
+	background: #fff;
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
+}
+.BrImgBig{
+	transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+.BrImgBig:hover{
+	transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+.BrImg{
+	width:285px; height:400px; overflow:hidden;
+}
+.BrInfo{
+	margin:15px 0 0 20px;
+	padding-bottom: 20px;
+}
+.BrInfo span{
+	display: inline-block;
+	margin-top:10px;
+	font-size:14px;
+}
+/*//알톤 브랜드*/
+/*알톤 뉴스*/
+.newsList:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.NBox{
+	float: left;
+	width:384px;
+	height: 370px;
+	overflow: hidden;
+	margin-bottom: 50px;
+}
+.NBox img{
+	width:100%;
+}
+.News01, .News02{
+	margin:0 24px 0 0;
+}
+.NewsBig{
+	transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transition: all 0.5s ease-in-out;
+}
+.NewsBig:hover{
+	transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+.NewsImg{
+	width:384px; height:250px; overflow:hidden;
+}
+.NewsInfo span{
+	display: inline-block;
+}
+.Nover{
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.Ntitle{
+	width:384px;
+	white-space: nowrap;
+	margin-top: 10px;
+	font-family: NanumBarunGothicBold;
+	font-size:18px;
+	color:#202025;
+}
+.NBox:hover span{
+	color:#ff8300;
+}
+.Ntxt{
+	height: 42px;
+	font-size:14px;
+}
+.Ndate{
+	margin-top:10px;
+	font-size: 14px;
+}
+/*//알톤 뉴스*/
+/*알톤 바이크 클리닉*/
+.AltonBikeClinic{
+/*	border:solid 1px #00f;*/
+	text-align: center;
+	min-height:400px;
+	background:url(../images/abcbg.jpg) no-repeat 50% 100%;
+	
+	/* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ABCtxt{
+	display: inline-block;
+	color:#fff;
+/*	border:solid 1px #f00;*/
+}
+.ABCtxt h2{
+	margin:115px  0 15px 0;
+	font-family: HelveticaBold;
+	font-size:32px;
+}
+.ABCtxt span{
+	font-size:16px;
+}
+.ABCMore a{
+	width:250px;
+	height: 50px;
+	background: #202025;
+	border:solid 2px #ff8300;
+	display: inline-block;
+	opacity: 0.8;
+	text-align: center;
+	font-size:18px;
+	color:#fff;
+	text-decoration: none;
+
+	margin:30px 0 0 0;
+}
+.ABCMore a:hover{
+	
+	color:#fff;
+	background:#ff8300;
+	border:solid 2px #fff;
+}
+.ABCMore span{
+	display: inline-block;
+	margin-top:13px;
+}
+/*//알톤 바이크 클리닉*/
+/*알톤 서비스*/
+.AltonService{
+	height: 600px;
+}
+.ServiceBox{
+	margin-top: 80px;
+	float: left;
+	background: #fff;
+	width:285px;
+	height:420px;
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
+}
+.SerBig{
+	transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+.SerBig:hover{
+	transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+.SerImg{
+	width:285px; height:285px; overflow:hidden;
+}
+.SerInfo{
+	display: inline-block;
+	width: 245px;
+	height: 100px;
+	margin:15px 20px 0 20px;
+}
+
+.SerTitle{
+	display: block;
+	font-family: NanumBarunGothicBold;
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+.SerTxt{
+	display: inline-block;
+	font-size: 14px;
+}
+.onlineAS, .onlineFAQ, .onlineStore{
+	margin-right: 20px;
+}
+/*//알톤 서비스*/
+/*FOOTER*/
+.footerMenu{
+	border-top: solid 5px #e6e6e6;
+	height:430px; 
+}
+.FMenuBox{
+	width:100%;
+	margin:0 auto;
+}
+.FMenulist{
+	margin: 50px 165px 0 0;
+	float: left;
+}
+.FMenuLast{
+	margin: 50px 0 0 0; 
+	float: left;
+}
+.FsubTitle{
+	display: inline-block;
+	margin-bottom: 15px;
+	font-family: NanumBarunGothicBold;
+	font-size:18px;
+	color:#202025;
+}
+.FSubBox>li{
+	font-size: 14px;
+	float: left;
+}
+.FSubTxt>li{
+	font-size: 14px;
+	margin:10px 0;
+}
+.Ftype{
+	margin-right: 80px;
+}
+.Rfooter{
+	width:100%;
+	height:230px;
+	background: #f2f2f2;
+}
+.footerOuter{
+	padding-top: 60px;
+}
+.Finfo{	
+	/*margin-top: 15px;*/
+	font-size:12px;
+}
+.Finfo p{
+	display: inline-block;
+}
+.copy{
+	font-size: 12px;
+	margin-top: 10px;
+}
+.FPhone{
+	color: #202025;
+	font-family: NanumBarunGothicBold;
+	margin-left: 20px;
+}
+.footerInner{
+	position: relative;
+}
+.Family{
+	text-align: right;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+.sns li{
+	margin-left: 5px;
+	display: inline-block;
+}
+.site li{
+	display: inline-block;
+}
+.siteBox{
+	margin:0 0 5px 5px;
+	font-size:12px;
+	text-align: center;
+	width:120px;
+	height: 30px;
+	border:solid 1px #666666;
+}
+.siteBox a{
+	color:#666;
+	display: inline-block;
+	padding-top:7px;
+}
+.siteBox a:hover{
+	text-decoration: none;
+	color:#666;
+}
+.rule li{
+	font-size: 12px;
+	display: inline-block;
+}
+.rule .subtxt{
+	padding:0 20px;
+	border-right: solid 1px #666
+}
+.rule .subcen{
+	padding-left: 20px;
+}
+/*//FOOTER*/
+/*알톤 바이크TYPE*/
+/*알톤 바이크타입 비주얼*/
+.bikeTypeVisual{
+	background:url(../images/bikeType/bikeTypeVisual.jpg) no-repeat 50% 100%;
+	width:100%;
+	padding:200px 0;
+}
+/*//알톤 바이크타입 비주얼*/
+/*미들 타이틀*/
+.Mcenter{
+	color:#202025;
+	text-align: center;
+}
+.middleTitle{
+	margin-top:50px;
+	font-size:28px;
+	font-family: HelveticaBold;
+}
+.underline{
+	width:80px;
+	display: inline-block;
+	border-bottom:solid 2px #202025;
+}
+.middleText{
+	font-size: 16px;
+	padding:10px 0 50px 0;
+	
+}
+.moreBtn{
+	margin-top:30px;
+	font-family: NanumBarunGothic;
+	font-size: 14px;
+	color:#999;
+	background:#fff;
+	width:100%; 
+	padding:10px; 
+	border:solid 1px #ccc; 
+	text-align:center;
+}
+/*정렬*/
+.priceList{
+	height: 50px;
+}
+.RowPr{
+	border-top:solid 5px #ff8300;
+}
+.listPd{
+	color:#202025;
+	padding:10px 30px 0 0;
+	display: inline-block;
+}
+/*//정렬*/
+/*제품*/
+.c4{
+	padding:0 -7.5px;
+	margin:0 -7.5px;
+}
+.n4{
+	float: left;
+	padding:0 7.5px 20px 7.5px; 
+}
+.productBox:hover .Txtcenter{
+	color:#ff8300;
+}
+.productBox:hover{
+	box-sizing: border-box;
+	border:solid 1px #ff8300;
+}
+.c4:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.productBox{
+	float: left;
+	background:#fff;
+	width:285px;
+	height: 430px;
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
+}
+.Txtcenter{
+	text-align: center;
+}
+.GrayLogo{
+	padding-top:20px;
+}
+.PrdName{
+	font-size:18px;
+}
+.PrdType{
+	font-size:14px;
+	color:#ccc;
+}
+.PrdImg{
+	margin:30px 0;
+	text-align: center;
+}
+.PrdImg img{
+	width:90%;
+}
+.PrdPrc{
+	color:#999;
+	font-size: 14px;
+	padding-bottom: 10px;
+}
+.PrdExp{
+	color:#999;
+	margin:0 auto;
+	width:235px;
+	font-size:14px;
+	padding-bottom: 30px;
+}
+/*//제품*/
+/*//알톤 바이크TYPE*/
+/*알톤 소식*/
+.AltonNewsVisual{
+	background:url(../images/altonNews/altonNews.jpg) no-repeat 50% 100%;
+	width:100%;
+	padding:200px 0;
+}
+/*서브메뉴*/
+.subMenu{
+	height: 45px;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+}
+.subMenu_inner{
+	position: relative;
+}
+.subMenu_inner li{
+	position: relative;
+	font-size:16px;
+	float: left;
+	width:150px;
+	border-right:solid 1px #e2e2e2;
+}
+.subMenu_inner ul:after{
+	content: '';
+	display: block;
+	clear:both;
+}
+.subMenu_inner a{
+	color:#666;
+	line-height: 45px;
+	text-align: center;
+	display: inline-block;
+	text-decoration: none;
+	width:100%;
+}
+.sub1{
+	background:#ff8300;
+	border-left:solid 1px #e2e2e2;
+}
+.sub1 a{
+	color:#fff;
+}
+/*검색*/
+.subMenu_inner .sub5{
+	position: absolute;
+	right:0;
+	top:0;
+}
+.subMenu_inner .srh{
+	position:relative;
+	margin-top:7px;
+	float:right;
+	height: 30px;
+	width:250px;
+	border-bottom:solid 3px #ccc;
+}
+.subMenu_inner .srh  input{
+	position:absolute;
+	right:0;
+	top:0;
+	width:250px;
+	border:none;
+	height: 30px;
+}
+.subMenu_inner .srh  input[type=button]{
+	position:absolute;
+	right:0;
+	top:0;
+	width:30px;
+	height: 30px;
+	background:url(../images/srh.jpg) center center no-repeat;
+}
+.subMenu_inner .srh_click{
+	position:absolute;
+	left:0;
+	top:0;
+	text-indent:10px;
+	vertical-align: middle;
+	line-height: 30px;
+}
+/*//검색*/
+/*//서브메뉴*/
+/*알톤 로케이션*/
+.location{
+	height: 45px;
+}
+.location_inner li{
+	position: relative;
+	font-size:16px;
+	float: left;
+	width:150px;
+	border-right:solid 1px #e2e2e2;
+}
+.location_inner a:hover{
+	color:#ff8300;
+}
+.location_inner .loc1_sub:hover.loc1_sub .over{
+	display:inline;
+}
+.location_inner .loc1_sub:hover.loc1_sub .stand{
+	display: none;
+}
+
+.loc1_sub .over{
+	display: none;
+}
+.loc2_sub a{
+	color:#ff8300;
+}
+
+
+.location_inner a{
+	line-height: 45px;
+	text-indent: 20px;
+	display: inline-block;
+	text-decoration: none;
+	width:100%;
+}
+.location_inner img{
+	position: absolute;
+	top:15px;
+	right:10%;
+}
+.location_inner .loc1{
+	border-left:solid 1px #e2e2e2;
+}
+.loc1 a{
+	color:#666;
+}
+.location_inner .loc2 a{
+	color:#ff8300;
+}
+.location_inner .loc2 .loc1_sub{
+	color:#666;
+}
+.location_inner .loc2 .loc1_sub:hover{
+	color:#ff8300;
+}
+.loc_ul{
+	height: 0px;
+	background:#fbfbfb;
+	overflow: hidden; /* 실 내용이 높이보다 커지면 해당 내용 감춤 */
+	transition: height .8s; /* height를 변화 시켰을 때 0.2초간 변화 되도록 설정(기본) */ 
+	-webkit-transition: height 0.8s; /* height를 변화 시켰을 때 0.2초간 변화 되도록 설정(구버전 크롬/사파라ㅣ) */ 
+	-moz-transition: height .8s; /* height를 변화 시켰을 때 0.2초간 변화 되도록 설정(구버전 파폭) */ 
+	-o-transition: height .8s; /* height를 변화 시켰을 때 0.2초간 변화 되도록 설정(구버전 오페라) */
+}
+.loc1:hover .loc_ul{
+	height:180px;
+}
+.loc2:hover .loc_ul{
+	height:90px;
+}
+.loc1:hover .loc_ul{
+	height:180px;
+}
+.loc2:hover .FAQ_ul{
+	height:225px;
+}
+.loc3:hover .tybr{
+	height:45px;
+}
+.loc2:hover .Type_ul{
+	height:405px;
+}
+/*//알톤 로케이션*/
+/*더 보기*/
+.newsBtn{
+	margin-bottom: 60px;
+}
+/*//더 보기*/
+/*//알톤 소식*/
+/*FAQ*/
+/*비주얼영역*/
+.FAQVisual{
+	background:url(../images/FAQ/FAQvisual.jpg) no-repeat 50% 100%;
+	width:100%;
+	padding:200px 0;
+}
+/*//비주얼영역*/
+/*아코디언*/
+button.accordion {
+	font-size:18px;
+    color: #444;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    border-bottom: solid 1px #ccc;
+    outline: none;
+    /*transition: 0.4s;*/
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion.active, button.accordion:hover {
+    /*border-top:solid 2px #ff8300;*/
+    /*border-right:solid 2px #ff8300;*/
+    /*border-left:solid 2px #ff8300;*/
+    box-sizing: border-box;
+    /*border:solid 2px #ff8300;*/
+    background:#f2f2f2;
+    color:#ff8300;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+div.panel {
+	font-size:18px;
+    display: none;
+    border-bottom:solid 1px #ccc;
+    /*border-left:solid 2px #ff8300;*/
+    /*border-right:solid 2px #ff8300;*/
+    color:#ff8300;
+    box-sizing: border-box;
+}
+.panel_inner{
+	width:830px;
+	padding: 20px 20px 20px 15px;
+	margin-left:330px;
+}
+/*//아코디언*/
+.arcTitle{
+	margin-top:50px;
+	height: 50px;
+	border-bottom:solid 1px #ccc;
+	border-top:solid 3px #ccc;
+}
+.dis{
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 50px;
+}
+.disp{
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 80px;
+	font-family: NanumBarunGothic;
+}
+.no{
+	width:100px;
+}
+.typ{
+	width:230px;
+}
+.tle{
+	width:850px;
+}
+.alignL{
+	text-align: left;
+}
+.all{
+	height: 630px;
+}
+/*온라인A/S바로가기*/
+.moveAS{
+	color:#666;
+	font-size:18px;
+	text-align: center;
+	height: 230px;
+	border:solid 1px #ccc;
+	margin:70px 0 50px 0;
+}
+.moveAS_inner{
+	margin-top:30px;
+}
+.moveAS_inner a{
+	margin-top:20px;
+	padding:10px 0;
+	display: inline-block;
+	color:#fff;
+	background:#ccc;
+	width:220px;
+	font-size:18px;
+}
+.moveAS_inner a:hover{
+	padding:10px 0;
+	display: inline-block;
+	color:#fff;
+	background:#ff8300;
+	width:220px;
+	font-size:18px;
+	text-decoration: none;
+}
+.p3{
+	margin-top:20px;
+}
+/*//온라인A/S바로가기*/
+/*//FAQ*/
+/*온라인 AS문의*/
+.onlineASBox{
+	margin:30px 0px;
+}
+/*AS비주얼*/
+.onlineASVisual{
+	background:url(../images/onlineAS/onlineASVisual.jpg) no-repeat 50% 100%;
+	width:100%;
+	padding:200px 0;
+}
+/*//AS비주얼*/
+/*개인정보취급방침*/
+.perAgree{
+	border:solid 1px #e2e2e2;
+	background:#fbfbfb;
+	padding:20px;
+	overflow-y: scroll;
+}
+.perAgree_inner{
+	width:100%;
+	height: 200px;
+	line-height: 20px;
+}
+.agreeBtn{
+	margin-top:20px;
+}
+.agreeBtn:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.checkbox{
+	float: right;
+}
+/*//개인정보취급방침*/
+/*개인정보 입력*/
+.AStable input{
+	border: 1px solid #e2e2e2;
+    color: #7b7a7a;
+    padding: 7px 0px 6px 10px;
+    height: 22px;
+}
+.AStable label{
+	font-family: NanumBarunGothic;
+	font-size:16px;
+}
+.AStable select{
+	font-size:16px;
+	border: 1px solid #e2e2e2;
+    color: #7b7a7a;
+    padding: 9px 0px 8px 10px;
+}
+.AStable td{
+	display:table-cell;
+	padding: 12px 0 13px 20px;
+	vertical-align: top;
+}
+.AStable input[type=button].submitAS{
+	color:#fff;
+	background:#ff8300;
+}
+.AStable .smitArea input[type=button]{
+	padding:10px 60px;
+	height: 45px;
+	font-family: NanumBarunGothic;
+	font-size:16px;
+	margin:0 10px;
+}
+.AStable input[type=button]{
+	padding: 9px 40px 9px 40px;
+    color: #666666;
+    border: 1px solid #999999;
+    background: #f0f0f0;
+    height: 37px;
+    font-size:14px;
+    font-family: NanumBarunGothic;
+}
+.AStable textarea{
+	border: 1px solid #e2e2e2;
+	font-family: NanumBarunGothic;
+	font-size:16px;
+	width:100%;
+	height: 200px;
+}
+.AStable p{
+	font-family: NanumBarunGothic;
+	font-size:16px;
+	padding:10px 0 0 0;
+	color:#7b7a7a;
+}
+.smitArea{
+	text-align: center;
+}
+.wid950{
+	width:950px;
+}
+.wid445{
+	width:430px;
+}
+.wid200{
+	widtH:200px;
+}
+.wid120{
+	width:120px;
+}
+.wid80{
+	width:80px;
+}
+.spanMargin{
+	font-family: NanumBarunGothic;
+	vertical-align: middle;
+	font-size:16px;
+	margin:0 5px;
+}
+.addr_detail{
+	margin-top:10px;
+}
+.star{
+	color:#ff8300;
+}
+.smitArea{
+	margin:10px 0 50px 0;
+}
+/*//개인정보 입력*/
+/*//온라인 AS문의*/
+/*대리점 찾기*/
+
+/* Style the tab */
+div.tab {
+    overflow: hidden;
+    /*border: 1px solid #ccc;*/
+    background-color: #fbfbfb;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border-left: solid 1px #ccc;
+    outline: none;
+    cursor: pointer;
+    padding: 10.5px 50px;
+    transition: 0.3s;
+    font-size: 16px;
+    color:#333;
+    font-family: NanumBarunGothic;
+}
+.socialTab{
+	border-right:solid 1px #ccc;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ff8300;
+    color:#fff;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #ff8300;
+    color:#fff;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    border-top: none;
+}
+
+.Scheckbox li{
+	width:230px;
+	line-height: 45px;
+	border:none;
+}
+.subMenu_inner input[type=checkbox]{
+	width:20px;
+	height: 20px;
+	margin-right:10px;
+}
+.stfl{
+	float:right;
+}
+.storeSection{
+	padding:50px 0;
+}
+.storeSection:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+/*비주얼*/
+.storeVisual{
+	background:url(../images/store/storeVisual.jpg) no-repeat 50% 100%;
+	width:100%;
+	padding:200px 0;
+}
+/*//비주얼*/
+/*지도영역*/
+.naver_map{
+	display: inline-block;
+}
+.map{
+	width:800px;
+	height: 600px;
+	background:#ccc;
+}
+.storelist{
+	margin-left:50px;
+	width:350px;
+	height:600px;
+	overflow-y: scroll;
+	border-top:solid 2px #ccc;
+	border-bottom:solid 2px #ccc;
+}
+/*//지도영역*/
+/*리스트영역*/
+.stbox{
+	display:inline-block;
+	width:100%;
+	/*height:140px;*/
+	padding-bottom:30px;
+	border-bottom:solid 1px #ccc;
+}
+.stbox:hover{
+	color:#ff8300;
+	border-bottom-color: #ff8300;
+}
+.stbox:after{
+	content:'';
+	display:block;
+	clear:both;
+}
+.stType{
+	margin:30px 10px 0 0;
+	float:right;
+}
+.fix{
+	margin-bottom: 10px;
+}
+.stTxt{
+	margin-top:20px;
+	width:215px;
+	float:left;
+}
+.stName{
+	font-size:16px;
+}
+.staddr, .stphone{
+	font-size:14px;
+}
+.staddr{
+	margin:5px 0;
+}
+/*//리스트영역*/
+/*//대리점 찾기*/
+
+
+
