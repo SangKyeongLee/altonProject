@@ -1,0 +1,119 @@
+@import url(reset.css);
+@font-face{	font-family: 'NanumBarunGothic';src:url(../altonfont/NanumBarunGothic.ttf) format('truetype');}
+@font-face{	font-family: 'NanumBarunGothicBold';src:url(../altonfont/NanumBarunGothicBold.ttf) format('truetype');}
+@font-face{	font-family: 'HelveticaBold';src:url(../altonfont/HelveticaBd.ttf) format('truetype');}
+body{
+	font-family: NanumBarunGothic;
+	font-size:1em;
+	color:#666;
+}
+/*가이드 페이지*/
+.ui-guide{
+    background:url(../images/guide/guide01.jpg) no-repeat 50% 100%;
+    background-size: 100%;
+    width:100%;
+    padding:80% 0;
+}
+/*.ui-start{*/
+/*    width:100%;*/
+/*}*/
+.sbtn{
+    width:100%;
+    text-align:center;
+    display: inline-block;
+    padding:1em 0;
+    font-size:0.9em;
+}
+.login{
+    border-right: solid 1px #eee;
+}
+/*//가이드 페이지*/
+/*로그인 페이지*/
+.head{
+    text-align:center;
+    width:100%;
+    position:relative;
+}
+.logo{
+    width:100%;
+    vertical-align: middle;
+}
+.logo img{
+    width:20%;
+}
+.close{
+    position:absolute;
+    top:30%;
+    right:2%;
+}
+.close img{
+    width:50%;
+}
+.wel{
+    width:100%;
+    padding:10% 0 15% 0;
+    text-align:center;
+}
+.hi{
+    width:80%;
+    text-align:center;
+    font-size:28px;
+    color:#000;
+    font-family: NanumBarunGothicBold;
+    display: inline-block;
+}
+.Lbox{
+    border:solid 1px #ccc;
+    padding:0.8em;
+    margin:2% 0;
+}
+.btn{
+    font-size:14px;
+    padding:1em;
+}
+.findPw{
+    text-align:right;
+    font-size:12px;
+    padding: 1em;
+}
+.agree{
+    font-size:12px;
+    letter-spacing: -0.5px;
+    margin-top:15%;
+}
+.log{
+    background:#ff8300;
+    color:#fff;
+}
+.fb{
+    background:#202025;
+    color:#fff;
+}
+.mem{
+    margin-top:5%;
+    background:#fff;
+    color:#666;
+    border:solid 1px #4d4d53;
+}
+/*//로그인 페이지*/
+/*회원가입 페이지*/
+.Mwel{
+    width:100%;
+    padding-bottom:10%;
+    text-align:center;
+}
+.fin{
+    background:#ff8300;
+    color:#fff;
+}
+.cancel{
+    background:#202025;
+    color:#fff;
+}
+/*//회원가입 페이지*/
+/*비밀번호 찾기*/
+.pwfin{
+    background:#202025;
+    color:#fff;
+}
+/*//비밀번호 찾기*/

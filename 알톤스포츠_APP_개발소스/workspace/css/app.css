@@ -1,0 +1,895 @@
+/*@font-face{	font-family: 'NanumBarunGothic';src:url(../altonfont/NanumBarunGothic.ttf) format('truetype');}*/
+/*@font-face{	font-family: 'NanumBarunGothicBold';src:url(../altonfont/NanumBarunGothicBold.ttf) format('truetype');}*/
+@import url(https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css);
+@font-face{	font-family: 'HelveticaBold';src:url(../altonfont/HelveticaBd.ttf) format('truetype');}
+html,body{
+	font-size:5vw;
+	font-family: NanumBarunGothic;
+	color:#666;
+}
+#splash{
+    z-index: 9999;
+}
+.wrap{
+	max-width: 780px;
+	margin: 0 auto;
+}
+.btn01{
+    width:18.3333333rem;
+    height:2.22222222rem;
+    justify-content:center;
+    align-items:center;
+    font-size:0.77777778rem;
+}
+.scrollEx{
+    height:23.8888889rem;
+    overflow-y:scroll;
+}
+.scrollEx span{
+    vertical-align: baseline;
+}
+/*header*/
+.header{
+    display: flex;
+    height:2.77777778rem;
+}
+.header_main{
+    display: flex;
+    height:2.77777778rem;
+    background:#202025;
+}
+.logo{
+    display: flex;
+    flex-grow:4;
+    align-items:center;
+    justify-content:center;
+}
+.LTitle{
+    color:#fff;
+    font-size:0.88888889rem;
+    font-weight: 700;
+}
+.logoImg{
+    width:3.55555556rem;
+    /*height:2.65625vh;*/
+}
+.close{
+    display:flex;
+    flex:1;
+    align-items:center;
+    justify-content:flex-end;
+}
+.closeImg{
+    width:0.94444444rem;
+    /*height:2.65625vh;*/
+    margin-right:0.83333333rem;
+}
+.back{
+    display:flex;
+    flex:1;
+    align-items:center;
+    justify-content:flex-start;
+}
+.backImg{
+    width:0.52777778rem;
+    margin-left: 0.83333333rem;
+}
+.side_menu{
+    display:flex;
+    flex:1;
+    align-items:center;
+    justify-content:flex-start;
+}
+.side_menuImg{
+    width:1.13888889rem;
+    margin-left: 0.83333333rem;
+}
+.edit{
+    display:flex;
+    flex:1;
+    align-items:center;
+    justify-content:center;
+    color:#ff8300;
+    font-size:0.77777778rem;
+}
+/*//header*/
+/*가이드*/
+.guide{
+    height:32.7777778rem;
+    /*background:url(images/guide/guide01.jpg) no-repeat 50% 100%;*/
+    /*background:#f00;*/
+}
+.guide01{
+    width:20rem;
+}
+.start{
+    display:flex;
+    height:2.77777778rem;
+}
+.login, .member{
+    display: flex;
+    flex:1;
+    align-items: center;
+    justify-content:center;
+    font-size:0.77777778rem;
+}
+.login{
+    border-right:solid 1px #ccc;
+}
+/*//가이드*/
+/*로그인*/
+.loginCon{
+    text-align:center;
+}
+.hello{
+    display: inline-block;
+    font-family: NanumBarunGothicBold;
+    font-weight: 700;
+    font-size:1.33333333rem;
+    color:#202025;
+    text-align:center;
+    width:13.33333333rem;
+    padding:2.5rem 0;
+}
+.Lbox{
+    display: flex;
+    justify-content:center;
+    margin-bottom: 0.55555556rem;
+}
+.Lbox input{
+    text-indent: 0.55555556rem;
+    display: flex;
+    border:solid 1px #202025;
+    font-size:0.77777778rem;
+    width:18.3333333rem;
+    height:2.22222222rem;
+    padding:0;
+}
+.find{
+    text-align:right;
+    font-size:0.66666667rem;
+    padding-right:0.83333333rem;
+}
+.agree{
+    font-size:0.55555556rem;
+    text-align:left;
+    padding-left:0.83333333rem;
+    margin-top:2.77777778rem;
+    margin-bottom:0.55555556rem;
+}
+.loginbtn, .fbloginbtn, .memberbtn{
+    display: inline-block;
+    background:#ff8300;
+    margin-bottom:0.55555556rem;
+}
+.logina, .fblogina, .membera{
+    display: flex;
+    color:#fff;
+}
+.fbloginbtn{
+    background:#202025;
+    margin-bottom: 1.11111111rem;
+}
+.memberbtn{
+    background:#fff;
+    border:solid 1px #202025;
+}
+.membera{
+    color:#666;
+}
+/*//로그인*/
+/*회원가입*/
+.finish, .cancel{
+    display: inline-block;
+    background:#ff8300;
+    margin-bottom:0.55555556rem;
+}
+.finisha, .cancela{
+    display: flex;
+    color:#fff;
+}
+.cancel{
+    background:#202025;
+}
+/*//회원가입*/
+/*비밀 번호 찾기*/
+.findOk{
+    display: inline-block;
+    background:#202025;
+}
+.findOka{
+    display: flex;
+    color:#fff;
+}
+/*//비밀 번호 찾기*/
+/*메인*/
+.gray{
+    background:#e1e1e1;
+    height:32.7777778rem;
+    overflow-y: scroll;
+}
+.Mbox{
+    display: flex;
+    margin-bottom:0.05555556rem;
+}
+.riding{
+    height:8.33333333rem;
+    background:url(../images/mainbg.png) no-repeat 50% 100%;
+    background-size: 20rem;
+}
+.title{
+    display: flex;
+    flex-direction:column;
+    flex-grow:2;
+    justify-content:center;
+    padding-left:0.83333333rem;
+}
+.rtit01{
+    color:#b25e13;
+    font-size:0.55555556rem;
+}
+.rtit02{
+    color:#ff8300;
+    font-size:1.55555556rem;
+    font-weight: 700;
+}
+.rtit03{
+    color:#a9a9ab;
+    font-size:0.55555556rem;
+}
+.prev{
+    display: flex;
+    flex:1;
+    align-items:center;
+    justify-content:flex-end;
+    padding-right:0.83333333rem;
+}
+.prev img{
+    width:0.94444444rem;
+}
+.record, .level, .club, .agency, .tip{
+    height:8.33333333rem;
+    background:#fff;
+}
+.tit01{
+    color:#4d4d53;
+    font-size:0.55555556rem;
+}
+.tit02{
+    color:#4d4d53;
+    font-size:1.55555556rem;
+    font-weight: 700;
+}
+.tit03{
+    color:#4d4d53;
+    font-size:0.55555556rem;
+}
+.atit01{
+    color:#ff8300;
+    font-size:0.55555556rem;
+}
+.atit02{
+    color:#ff8300;
+    font-size:1.55555556rem;
+    font-weight: 700;
+}
+.atit03{
+    color:#ff8300;
+    font-size:0.55555556rem;
+}
+/*패널*/
+.panel_alton{
+    background:#fff;
+}
+.profile{
+    display: flex;
+    background:#ff8300;
+    height: 6.94444444rem;
+    justify-content:center;
+    align-items:center;
+}
+.profile_pic{
+    display: flex;
+    width:3.88888889rem;
+    height:3.88888889rem;
+    background:#fff;
+    border-radius: 3.33333333rem;
+    justify-content:center;
+    align-items:center;
+    margin-left:0.83333333rem;
+    background:url(../images/welsi.jpg) no-repeat;
+    background-size:cover;
+}
+.profile_exp{
+    display: flex;
+    flex-grow:1;
+    color:#fff;
+    font-size:0.88888889rem;
+    flex-direction:column;
+    justify-content:center;
+    margin-left:0.83333333rem;
+}
+.profile_exp p{
+    padding:0.27777778rem;
+}
+.profile_fix{
+    display: block;
+    background:#333;
+    /*height:2.22222222rem;*/
+    color:#fff;
+    vertical-align: middle;
+    text-align:center;
+    font-size:0.88888889rem;
+    line-height: 2.22222222rem;
+}
+.menu_list{
+    height: 26.3888889rem;
+    overflow-y: scroll;
+}
+.menu_list a{
+    display: block;
+    padding:0.83333333rem;
+    font-size:0.88888889rem;
+}
+/*//패널*/
+/*//메인*/
+/*라이딩*/
+.main_recording{
+    display: flex;
+    align-items:center;
+    height:6.11111111rem;
+    background:#202025;
+}
+.ride_value{
+    
+}
+.flex_value{
+    display:flex;
+    flex:1;
+    flex-direction:column;
+    color:#ff8300;
+}
+.riding_tit{
+    vertical-align: middle;
+    font-size:0.77777778rem;
+    padding-bottom:0.55555556rem;
+}
+.riding_tit img{
+    width:0.38888889rem;
+    padding-right:0.27777778rem;
+}
+.marLeft30{
+    margin-left:0.83333333rem;
+}
+.big_value_text{
+    font-weight: 700;
+    font-size:1.88888889rem;
+}
+.small_value_text{
+    font-size:0.77777778rem;
+}
+.timer_tit{
+    vertical-align: top;
+    font-size:0.77777778rem;
+    padding-bottom:0.27777778rem;
+}
+.timer_tit img{
+    width:0.55555556rem;
+    padding-right:0.27777778rem;
+}
+.riding_map{
+    background:url(../images/ride/riding_map.png) no-repeat 50% 100%;
+    height:18.6111111rem;
+}
+.sub_riding{
+    display: flex;
+    align-items:center;
+    background:#fff;
+}
+.padTop30{
+    padding-top:0.83333333rem;
+    color:#202025;
+}
+.cals_value img{
+    width:0.5rem; 
+}
+.speed_value img{
+    width:0.61111111rem;
+}
+.cals_value img, .speed_value img{
+    padding-right:0.27777778rem;
+}
+.ride_start{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight: 700;
+    background:#ff8300;
+    color:#fff;
+    font-size:1rem;
+    height:2.77777778rem;
+}
+/*//라이딩*/
+/*라이딩 기록*/
+.record_today{
+    display: flex;
+    flex-direction:column;
+    height:6.11111111rem;
+    background:#202025;
+}
+.record_Ex{
+    font-size:0.66666667rem;
+    color:#fff;
+    padding:0.69444444rem 0 0 0.83333333rem;
+}
+.today_value>.today_riding{
+    text-align:right;
+    padding-right: 0.83333333rem;
+    padding-top: 0.55555556rem;
+}
+.today_value>.today_riding span{
+    vertical-align: baseline;
+}
+.today_value_text{
+    font-size:1.55555556rem;
+}
+.bigToday_value_text{
+    font-weight: 700;
+    font-size:2.33333333rem;
+}
+.record_graph{
+    height:15.8611111rem;
+}
+.record_graph p{
+    font-size:0.77777778rem;
+    color:#202025;
+    padding-top:0.41666667rem;
+    padding-left:0.83333333rem;
+}
+.record_graph img{
+    width:20rem;
+}
+.allday{
+    display:flex;
+    flex:1;
+    align-items:center;
+    justify-content:center;
+    color:#ff8300;
+    font-size:0.77777778rem;
+}
+.distance_tit{
+    vertical-align: top;
+    font-size:0.77777778rem;
+    padding-bottom:0.27777778rem;
+}
+.distance_tit img{
+    width:0.58333333rem;
+}
+.distanceAvg_tit{
+    vertical-align: top;
+    font-size:0.77777778rem;
+    padding-bottom:0.27777778rem;
+}
+.distanceAvg_tit img{
+    width:0.38888889rem;
+}
+.cals_tit{
+    vertical-align: top;
+    font-size:0.77777778rem;
+    padding-bottom:0.27777778rem;
+}
+.cals_tit img{
+    width:0.58333333rem;
+}
+/*//라이딩 기록*/
+/*라이딩 레벨*/
+.now_level{
+    display: flex;
+    align-items:center;
+    height:9.16666667rem;
+    background:#202025;
+    flex-direction:column;
+    font-size:0.55555556rem;
+    color:#fff;
+}
+.now_tier img{
+    margin-top:0.83333333rem;
+    width:5.27777778rem;
+}
+.gauge_bar{
+    margin-top:0.83333333rem;
+    margin-bottom: 0.27777778rem;
+    width:18.3333333rem;
+    height:0.27777778rem;
+    background:#fff;
+    border-radius: 5px;
+}
+.level_list{
+    height: 23.6111111rem;
+    background:#f2f2f2;
+    overflow-y: scroll;
+}
+.level_box{
+    display: flex;
+    height:5.55555556rem;
+    background:#fff;
+    margin-top:0.13888889rem;
+}
+.tier_img{
+    display: flex;
+    flex:1;
+    justify-content:center;
+    align-items:center;
+}
+.tier_img img{
+    width:3.72222222rem;
+}
+.tier_txt{
+    display: flex;
+    flex-direction:column;
+    flex-grow:1.2;
+    justify-content:center;
+}
+.tier_title{
+    font-size:0.66666667rem;
+    color:#202025;
+    margin-bottom: 0.83333333rem;
+}
+.tier_sub{
+    font-size:0.55555556rem;
+    color:#ccc;
+}
+/*//라이딩 레벨*/
+/*라이딩 클럽*/
+.club_bg{
+    background:#f2f2f2;
+}
+.club_search_section{
+    display: flex;
+    margin:0.13888889rem 0;
+}
+input[type="text"].club_search{
+    background:#fff;
+    display: flex;
+    width:17.2222222rem;
+    height:2.22222222rem;
+    font-size:0.77777778rem;
+    text-indent:0.41666667rem;
+}
+.club_search_btn{
+    display: flex;
+    width:2.77777778rem;
+    align-items:center;
+    justify-content:center;
+    color:#fff;
+    font-size:0.77777778rem;
+    background:#666;
+}
+.club_req{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    height:6.94444444rem;
+    background:url(../images/club/club_bg.png);
+    background-size: 20rem;
+}
+.new_club01{
+    font-size:0.66666667rem;
+    color:#fff;
+    padding-bottom: 0.27777778rem;
+}
+.new_club02{
+    font-size:0.88888889rem;
+    color:#fff;
+    font-weight: 700;
+}
+.org{
+    color:#ff8300;
+}
+.club_list_title{
+    display: flex;
+    align-items:center;
+    text-indent: 0.83333333rem;
+    font-size:0.55555556rem;
+    height: 1.38888889rem;
+}
+.club_list_scroll{
+    height:22.0833333rem;
+    overflow-y: scroll;
+}
+.club_box{
+    display: flex;
+    height:5.55555556rem;
+    background:#fff;
+    margin-bottom:0.13888889rem;
+}
+.club_img{
+    display: flex;
+    /*flex:1;*/
+}
+.club_img img{
+    width:5.55555556rem;
+}
+.club_txt{
+    display: flex;
+    flex-direction:column;
+    flex-grow:2;
+    justify-content:center;
+    padding-left:0.83333333rem;
+}
+.club_name{
+    font-size:0.77777778rem;
+    margin-bottom: 0.27777778rem;
+}
+.club_addr{
+    font-size:0.55555556rem;
+}
+.club_addr img{
+    vertical-align: top;
+    width:0.38888889rem;
+    padding-right:0.27777778rem;
+    margin-bottom: 0.27777778rem;
+}
+.club_intro{
+    font-size:0.55555556rem;
+}
+/*//라이딩 클럽*/
+/*알톤 대리점*/
+.store_map{
+    height:17.3611111rem;
+    background:url(../images/ride/riding_map.png) no-repeat 50% 100%;
+}
+.store_list{
+    height:13.0555556rem;
+    overflow-y: scroll;
+}
+.store_box{
+    display: flex;
+    height: 5.55555556rem;
+    background:#fff;
+    margin-top:0.13888889rem;
+}
+.store_img{
+    display: flex;
+}
+.store_img img{
+    width:5.55555556rem;
+}
+.store_txt{
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    flex-grow:2;
+    padding-left:0.83333333rem;
+}
+.store_call{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    padding:0 0.83333333rem;
+}
+.store_call img{
+    width:2.22222222rem;
+}
+/*//알톤 대리점*/
+/*알톤 스쿨*/
+.tabbar{
+    display: flex;
+    z-index: 9999;
+    height: 2.22222222rem;
+    background:#fff;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
+}
+.tab{
+    display:flex;
+    flex:1;
+    justify-content:center;
+    align-items:center;
+    font-size:0.77777778rem;
+}
+.tab:hover{
+    color:#ff8300;
+}
+.tip_list{
+    height: 30.5555556rem;
+    overflow-y: scroll;
+}
+.tip_box{
+    display: flex;
+    flex-direction:column;
+    margin-top:0.27777778rem;
+    height:13.3333333rem;
+    background:#fbfbfb;
+    font-size:0.77777778rem;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
+}
+.tip_img{
+    height: 8.33333333rem;
+    background:#ff0;
+}
+.tip_txt{
+    height:5rem;
+}
+.tip_title{
+    padding:0.83333333rem 0 0.55555556rem 0.83333333rem;
+    font-weight: 700;
+}
+.tip_sub{
+    padding:0 0.83333333rem;
+    font-size:0.66666667rem;
+}
+.tip_share{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    border:solid 1px #ccc;
+    margin-top:0.83333333rem;
+    height:2.16666667rem;
+}
+/*//알톤 스쿨*/
+/*내 자전거*/
+.gray_wrap{
+    background:#f2f2f2;
+}
+.now_bike{
+    background:#fff;
+    line-height: 2.22222222rem;
+    margin:0.13888889rem 0;
+    font-size:0.88888889rem;
+    font-weight: 700;
+    text-indent: 0.83333333rem;
+}
+.org_font{
+    color:#ff8300;
+}
+.mybike_list{
+    height: 27.5rem;
+    overflow-y: scroll;
+}
+.bike_box{
+    display: flex;
+    background:#fff;
+    height:10rem;
+    flex-direction:column;
+    margin-bottom: 0.27777778rem;
+}
+.bike_inner_box{
+    display: flex;
+}
+.bike_imgbox{
+    display: inline-block;
+    width:17.5rem;
+    height:7.22222222rem;
+    border-right:solid 1px #eee;
+    border-bottom:solid 1px #eee;
+    box-sizing: border-box;
+}
+.bike_img{
+    display: flex;
+    height: 100%;
+    justify-content:center;
+    align-items:center;
+}
+.bike_img img{
+    height:95%;
+}
+.bike_delete{
+    display:flex;
+    width:2.5rem;
+    height: 7.22222222rem;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    
+    color:#999;
+    font-size:0.55555556rem;
+    border-bottom:solid 1px #eee;
+    box-sizing:border-box;
+}
+.bike_id_inner{
+    display: flex;
+    flex-direction:column;
+    flex:2;
+    padding-left:0.83333333rem;
+}
+.bike_id{
+    font-size:0.66666667rem;
+}
+.bike_num{
+    font-size:0.88888889rem;
+}
+.bike_id_more{
+    display: flex;
+    flex:1;
+    justify-content:flex-end;
+    font-size:0.88888889rem;
+    color:#202025;
+    padding-right:0.83333333rem;
+}
+.bike_idbox{
+    display:flex;
+    align-items:center;
+    width:17.5rem;
+    height: 2.77777778rem;
+    border-right:solid 1px #eee;
+    box-sizing:border-box;
+}
+.bike_bcon{
+    display: flex;
+    flex:1;
+    justify-content:center;
+    align-items:center;
+}
+/*//내 자전거*/
+/*공지사항*/
+.notice_scroll{
+    height: 32.7777778rem;
+    overflow-y: scroll;
+}
+.notice_box{
+    padding:0.83333333rem;
+    background:#fff;
+    margin-top:0.27777778rem;
+}
+.notice_title{
+    font-size:0.88888889rem;
+    font-weight: 700;
+    color:#202025;
+    padding-bottom: 0.55555556rem;
+}
+.notice_exp{
+    font-size:0.66666667rem;
+    padding-bottom: 0.55555556rem;
+}
+.underline{
+    width:1rem;
+    border:solid 1px #ccc;
+}
+.notice_date{
+    font-size:0.66666667rem;
+    color: #202025;
+    margin:0.55555556rem 0;
+}
+.notice_more{
+    display:block;
+    color:#666;
+    border:solid 1px #ccc;
+    box-sizing: border-box;
+    line-height: 2.22222222rem;
+    text-align:center;
+    font-size:0.77777778rem;
+}
+/*//공지사항*/
+/*A/S문의*/
+.as_scroll{
+    height: 32.7777778rem;
+    overflow-y: scroll;
+}
+.fbfbfb_wrap{
+    background:#fbfbfb;
+}
+.as_box{
+    display: flex;
+    background:#fff;
+    font-size:0.77777778rem;
+    height: 2.77777778rem;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 0.83333333rem;
+    margin:0.13888889rem 0;
+    border-top:solid 1px #f2f2f2;
+    border-bottom:solid 1px #f2f2f2;
+    box-sizing: border-box;
+}
+.as_box img{
+    width:0.38888889rem;
+}
+.as_notice{
+    font-size:0.66666667rem;
+    padding:0.83333333rem;
+}
+.weight700{
+    font-weight: 700;
+}
+/*//A/S문의*/
